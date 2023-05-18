@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,35 +11,25 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <title>시작하조</title>
-
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
     * {
       margin: 0;
       padding: 0;
-      font-family: 'Nanum Myeongjo', serif;
+      font-family: 'IBM Plex Sans KR', sans-serif;
     }
-
     ul,
     li {
       list-style: none;
       padding: 0;
     }
-
     a {
       display: block;
       text-decoration: inherit;
     }
-
     img {
       background-position: center;
       background-size: cover;
-    }
-  
-    .top h1 {
-      font-size: 40px;
-        font-weight: 500;
     }
     .self_intro {
       display: flex;
@@ -49,16 +38,81 @@
       justify-content: center;
       padding: 50px 0;
     }
-
+    .self_intro .pic {
+      width: 250px;
+      height: 250px;
+      border: 6px solid paleturquoise;
+      border-radius: 100%;
+      overflow: hidden;
+    }
     .self_intro h2 {
-      display: inline-block;
+      padding-top: 40px;
+    }
+    .self_intro .intro ul {
       text-align: center;
     }
-   
+    .self_intro .intro ul li {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 2rem;
+    }
+    section.comment {
+      padding: 50px;
+    }
+    .mypost {
+      width: 860px;
+      margin: 20px auto 0px auto;
+    }
+    .mypost form-control {
+      margin-top: 20px;
+      background-color: #fff;
+    }
+    .mypost>button {
+      margin-top: 10px;
+      background-color: #5bdc50;
+      border: 0;
+    }
+    .card-body {
+      position: relative;
+    }
+    p.small {
+      background-color: #5bdc50;
+      position: absolute;
+      right: 10px;
+      bottom: 5px;
+    }
+    p.small a {
+      float: left;
+      padding: 0 5px;
+    }
+    .pic {
+      background-image: url("https://i.esdrop.com/d/f/mbcIvVbY3z/dK1RL87Dc3.jpg");
+      background-position: center 30%;
+      background-size: cover;
+    }
+    .bloglink {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0px 20px 0px;
+    }
+    .bloglink a {
+      display: inline-block;
+    }
+    .top {
+      background-color: paleturquoise;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      text-align: center;
+    }
+    .intro {
+      text-align: center;
+    }
     .wrap {
       display: flex;
       flex-direction: row;
-      height: 1350px;
+      height: 800px;
       margin: 0 auto;
     }
     .pic_wrap {
@@ -72,8 +126,58 @@
       background-size: cover;
       transform: 50%;
     }
-    .pic {
-      width: 40%;
+     .pic {
+      width: 60%;
+      height: 400px;
+      text-align: center;
+      background-color: #5bdc50;
+      border-radius: 20px;
+      transform: translatey(-20%);
+      overflow: hidden;
+      text-align: center;
+      box-sizing: border-box;
+      box-shadow: 10px 20px 30px grey;
+    }
+    .pic img {
+            width: 100%;
+            background-size: contain;
+        }
+    .right {
+      width: 50%;
+      height: 100%;
+      
+    }
+    .self_intro {
+      padding-top: 150px;
+    }
+    .self_intro h2 {
+      font-size: 24px;
+      font-weight: 400;
+      padding-top: 40px;
+    }
+    .self_intro .pic img {
+      height: 250px;
+      transform: translateX(-25%)
+    }
+    .wrap {
+      display: flex;
+      flex-direction: row;
+      height: 800px;
+      margin: 0 auto;
+    }
+    .pic_wrap {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://images.unsplash.com/photo-1519806870789-d65fc19601fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTl8fGJsdXJyeSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+      background-color: paleturquoise;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: 50%;
+    }
+     .pic {
+      width: 60%;
       text-align: center;
       background-color: #5bdc50;
       border-radius: 20px;
@@ -86,80 +190,21 @@
     .right {
       width: 50%;
       height: 100%;
+      
     }
     .self_intro {
       padding-top: 150px;
     }
     .self_intro h2 {
-      font-size: 30px;
+      font-size: 24px;
       font-weight: 400;
       padding-top: 40px;
     }
-
     .self_intro .pic img {
-      max-height: 250px;
-      max-width: 100%;
-      transform: translateX(-25%);
+      height: 250px;
+      transform: translateX(-25%)
     }
-
-    .self_intro .intro ul {
-      text-align: center;
-    }
-
-    .self_intro .intro ul li {
-      font-size: 25px;
-      font-weight: 50;
-      line-height: 5rem;
-    }
- 
-    .bloglink {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      margin: 20px 0px 20px 0px;
-    }
-    .bloglink a {
-      display: inline-block;
-    }
-    section.comment {
-      padding: 50px;
-    }
-
-    .mypost {
-      width: 860px;
-      margin: 20px auto 0px auto;
-    }
-
-    .mypost form-control {
-      margin-top: 20px;
-      background-color: #fff;
-    }
-
-    .mypost>button {
-      margin-top: 10px;
-      background-color: #5bdc50;
-      border: 0;
-    }
-
-    .card-body {
-      position: relative;
-    }
-
-    p.small {
-      background-color: #5bdc50;
-      position: absolute;
-      right: 10px;
-      bottom: 10px;
-    }
-
-    p.small a {
-      float: left;
-      padding: 5px;
-    }
-
   </style>
-
 </head>
 
 <body>
