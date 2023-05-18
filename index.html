@@ -56,39 +56,53 @@
       font-weight: 500;
       line-height: 2rem;
     }
-    section.comment {
-      padding: 50px;
+    .wrap {
+      display: flex;
+      flex-direction: row;
+      height: 800px;
+      margin: 0 auto;
     }
-    .mypost {
-      width: 860px;
-      margin: 20px auto 0px auto;
-    }
-    .mypost form-control {
-      margin-top: 20px;
-      background-color: #fff;
-    }
-    .mypost>button {
-      margin-top: 10px;
-      background-color: #5bdc50;
-      border: 0;
-    }
-    .card-body {
-      position: relative;
-    }
-    p.small {
-      background-color: #5bdc50;
-      position: absolute;
-      right: 10px;
-      bottom: 5px;
-    }
-    p.small a {
-      float: left;
-      padding: 0 5px;
+    .pic_wrap {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://images.unsplash.com/photo-1519806870789-d65fc19601fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTl8fGJsdXJyeSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+      background-color: paleturquoise;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     .pic {
-      background-image: url("https://i.esdrop.com/d/f/mbcIvVbY3z/dK1RL87Dc3.jpg");
-      background-position: center 30%;
-      background-size: cover;
+      width: 60%;
+      height: 400px;
+      text-align: center;
+      background-color: #5bdc50;
+      border-radius: 20px;
+      transform: translatey(-20%);
+      overflow: hidden;
+      text-align: center;
+      box-sizing: border-box;
+      box-shadow: 10px 20px 30px grey;
+    }
+    .pic img {
+      width: 100%;
+      background-size: contain;
+    }
+    .right {
+      width: 50%;
+      height: 100%;
+    }
+    .self_intro {
+      padding-top: 150px;
+    }
+    .self_intro h2 {
+      font-size: 24px;
+      font-weight: 400;
+      padding-top: 40px;
+    }
+    .self_intro .pic img {
+      height: 250px;
+      transform: translateX(-25%);
     }
     .bloglink {
       display: flex;
@@ -109,106 +123,10 @@
     .intro {
       text-align: center;
     }
-    .wrap {
-      display: flex;
-      flex-direction: row;
-      height: 800px;
-      margin: 0 auto;
-    }
-    .pic_wrap {
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url("https://images.unsplash.com/photo-1519806870789-d65fc19601fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTl8fGJsdXJyeSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
-      background-color: paleturquoise;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transform: 50%;
-    }
-     .pic {
-      width: 60%;
-      height: 400px;
-      text-align: center;
-      background-color: #5bdc50;
-      border-radius: 20px;
-      transform: translatey(-20%);
-      overflow: hidden;
-      text-align: center;
-      box-sizing: border-box;
-      box-shadow: 10px 20px 30px grey;
-    }
-    .pic img {
-            width: 100%;
-            background-size: contain;
-        }
-    .right {
-      width: 50%;
-      height: 100%;
-      
-    }
-    .self_intro {
-      padding-top: 150px;
-    }
-    .self_intro h2 {
-      font-size: 24px;
-      font-weight: 400;
-      padding-top: 40px;
-    }
-    .self_intro .pic img {
-      height: 250px;
-      transform: translateX(-25%)
-    }
-    .wrap {
-      display: flex;
-      flex-direction: row;
-      height: 800px;
-      margin: 0 auto;
-    }
-    .pic_wrap {
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url("https://images.unsplash.com/photo-1519806870789-d65fc19601fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTl8fGJsdXJyeSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
-      background-color: paleturquoise;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transform: 50%;
-    }
-     .pic {
-      width: 60%;
-      text-align: center;
-      background-color: #5bdc50;
-      border-radius: 20px;
-      transform: translatey(-20%);
-      overflow: hidden;
-      text-align: center;
-      box-sizing: border-box;
-      box-shadow: 10px 20px 30px grey;
-    }
-    .right {
-      width: 50%;
-      height: 100%;
-      
-    }
-    .self_intro {
-      padding-top: 150px;
-    }
-    .self_intro h2 {
-      font-size: 24px;
-      font-weight: 400;
-      padding-top: 40px;
-    }
-    .self_intro .pic img {
-      height: 250px;
-      transform: translateX(-25%)
-    }
   </style>
 </head>
 
 <body>
-  <!-- 바디는 주석처리 한 부분만 각자 코드 집어넣으세요 -->
   <div class="wrap">
     <div class="pic_wrap">
       <div class="pic">
@@ -217,22 +135,24 @@
     </div>
     <div class="right">
       <div class="self_intro">
-        <div class="intro" style="text-align:center">
+        <div class="intro">
           <h1>시작하조</h1>
           <h2>이름: <span>엄한솔</span></h2>
           <ul>
             <li>mbti: <span>INFJ</span></li>
-            <li>"<span>안녕하세요 !! 6기 node.js A반 8조 팀장을 맡은 엄한솔 이라고 합니다.<br/>
+            <li>
+              "<span>안녕하세요 !! 6기 node.js A반 8조 팀장을 맡은 엄한솔 이라고 합니다.<br/>
               새로운 경험과 새로운 일을 찾아 이번에 개발자 공부를 시작하게 되었는데<br/>
               개인적으로 생각 했던 것보다 더 매우 매우 어렵고 따라가기 힘드네요...?! <br/>
               하지만 어쩌겠습니까 이미 회사는 그만뒀고 다시 돌아가기엔 한발을 내딛었으니 눈 감고 해보아야죠~!<br/>
-              지금은 부족한 부분이 상당히 많고 또한 손이 많이 가는 초보 개발 후보생이지만 앞으로 좋은 모습을 보이며 노력해보겠습니다 !!</span>"</li>
+              지금은 부족한 부분이 상당히 많고 또한 손이 많이 가는 초보 개발 후보생이지만 앞으로 좋은 모습을 보이며 노력해보겠습니다 !!</span>"
+            </li>
             <li class="bloglink">
               <span>
                 <a target="_blank" href="https://costumbre.tistory.com/">
-                  <image src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F9931DF3D5B95428108" height="80" width="140"></a>
+                  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F9931DF3D5B95428108" height="80" width="140" alt="Blog"></a>
                 <a target="_blank" href="https://github.com/SSol10">
-                  <image src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="100" width="100"></a>
+                  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="100" width="100" alt="GitHub"></a>
               </span>
             </li>
           </ul>
